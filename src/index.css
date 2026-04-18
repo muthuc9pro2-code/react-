@@ -1,13 +1,128 @@
-body {
+/* RESET */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* BODY */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* APP CONTAINER */
+.App {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* MAIN */
+main {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* LIST */
+ul {
+  list-style: none;
+}
+
+/* ITEM */
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* LAST ITEM NO BORDER */
+.item:last-child {
+  border-bottom: none;
+}
+
+/* LABEL */
+.item label {
+  flex: 1;
+}
+
+/* CHECKED STYLE */
+.item input:checked + label {
+  text-decoration: line-through;
+  color: #999;
+}
+
+/* ICON */
+.item svg {
+  cursor: pointer;
+  color: #888;
+}
+
+.item svg:hover {
+  color: red;
+}
+
+/* EMPTY TEXT */
+main p {
+  text-align: center;
+  color: #777;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #666;
+}
+/* ADD ITEM CONTAINER (optional but nice) */
+.addForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* INPUT FIELD */
+.addForm input {
+  width: 300px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.2s;
+}
+
+/* INPUT FOCUS */
+.addForm input:focus {
+  border-color: #2563eb;
+}
+
+/* ADD BUTTON */
+.addForm button {
+  padding: 10px 14px;
+  font-size: 18px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* BUTTON HOVER */
+.addForm button:hover {
+  background: #1e40af;
 }
